@@ -45,6 +45,9 @@ func newRouter(s *Server) *gin.Engine {
 	spyFamilyGroup := router.Group("/spyfamily")
 	applyRoutes(spyFamilyGroup, s.getSpyFamilyRoute())
 
+	// 添加新的路由組
+	newServiceGroup := router.Group("/newservice")
+	applyRoutes(newServiceGroup, s.getNewServiceRoute())
 	return router
 }
 
