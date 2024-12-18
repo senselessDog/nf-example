@@ -60,6 +60,12 @@ func newRouter(s *Server) *gin.Engine {
 	ChiikawaGroup := router.Group("/chiikawa")
 	applyRoutes(ChiikawaGroup, s.getChiikawaRoute())
 
+	ChiikawaGroup := router.Group("/chiikawa")
+	applyRoutes(ChiikawaGroup, s.getChiikawaRoute())
+
+	// 添加新的路由組
+	newServiceGroup := router.Group("/newservice")
+	applyRoutes(newServiceGroup, s.getNewServiceRoute())
 	return router
 }
 
