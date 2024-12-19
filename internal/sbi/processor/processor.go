@@ -4,10 +4,8 @@ import "github.com/andy89923/nf-example/pkg/app"
 
 type ProcessorNf interface {
 	app.App
-
 	Processor() *Processor
 }
-
 type Processor struct {
 	ProcessorNf
 }

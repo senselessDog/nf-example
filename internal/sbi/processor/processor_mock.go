@@ -5,16 +5,14 @@
 //
 //	mockgen -source=internal/sbi/processor/processor.go -package=processor
 //
-
 // Package processor is a generated GoMock package.
 package processor
 
 import (
-	reflect "reflect"
-
 	context "github.com/andy89923/nf-example/internal/context"
 	factory "github.com/andy89923/nf-example/pkg/factory"
 	gomock "go.uber.org/mock/gomock"
+	reflect "reflect"
 )
 
 // MockProcessorNf is a mock of ProcessorNf interface.

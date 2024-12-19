@@ -5,17 +5,15 @@
 //
 //	mockgen -source=internal/sbi/server.go -package sbi
 //
-
 // Package sbi is a generated GoMock package.
 package sbi
 
 import (
-	reflect "reflect"
-
 	context "github.com/andy89923/nf-example/internal/context"
 	processor "github.com/andy89923/nf-example/internal/sbi/processor"
 	factory "github.com/andy89923/nf-example/pkg/factory"
 	gomock "go.uber.org/mock/gomock"
+	reflect "reflect"
 )
 
 // MocknfApp is a mock of nfApp interface.
